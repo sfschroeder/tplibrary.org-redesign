@@ -1917,6 +1917,8 @@
 			font-size: 1.5em;
 			letter-spacing: -0.025em;
 		}
+	
+}
 
 	footer {
 		margin: 0 0 3em 0;
@@ -1929,6 +1931,7 @@
 		footer.major {
 			padding-top: 3em;
 		}
+		
 /* Catalog Search */
 input[type=searchcatalog] {
     width: 130px;
@@ -2085,26 +2088,60 @@ input[type=searchcatalog]:focus {
 
 		.icon.major {
 			text-align: center;
-			cursor: default;
+			cursor: pointer;
 			background-color: #3b5f6e;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+			box-shadow: 0 0 0 4px #3b5f6e;
 			color: #fff;
 			border-radius: 100%;
 			display: inline-block;
 			width: 5em;
 			height: 5em;
 			line-height: 5em;
-			box-shadow: 0 0 0 7px white, 0 0 0 8px #e0e0e0;
 			margin: 0 0 2em 0;
+			-webkit-transition: background 0.2s, color 0.2s;
+			-moz-transition: background 0.2s, color 0.2s;
+			transition: background 0.2s, color 0.2s;
 		}
 
 			.icon.major:before {
 				font-size: 36px;
 			}
-
+			.icon.major:after {
+			top: -7px;
+			left: -7px;
+			padding: 7px;
+			box-shadow: 0 0 0 4px #fff;
+			-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+			-webkit-transform: scale(.8);
+			-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+			-moz-transform: scale(.8);
+			-ms-transform: scale(.8);
+			transition: transform 0.2s, opacity 0.2s;
+			transform: scale(.8);
+			opacity: 0;
+			}
+			.icon.major:hover:after {
+			-webkit-transform: scale(0.85);
+			-moz-transform: scale(0.85);
+			-ms-transform: scale(0.85);
+			transform: scale(0.85);
+			opacity: 0.5;
+			}
+			.icon.major:hover {
+			background: rgba(255,255,255,1);
+			color: #3b5f6e;
+			}
+			.icon.major:hover:after {
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			opacity: 1;
+			}
 /* Lists */
 
 	ol.default {
@@ -2532,7 +2569,7 @@ input[type=searchcatalog]:focus {
 /* Wrapper */
 
 	.wrapper {
-		padding: 5em 0 3em 0;
+		padding: 2em 0 2em 0;
 	}
 
 		.wrapper.style1 {
