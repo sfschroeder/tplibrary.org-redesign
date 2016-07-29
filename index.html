@@ -9,199 +9,198 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-
 </head>
 <body>
 <div id="page-wrapper">
-
 <!-- /#Header -->
-	<header id="header">
+	<header id="header" class="clearfix">
 		<div id="logo">
-		<img src="images/logo.png" alt="logo">
+			<a href="/" title="home"><img src="images/logo.png" alt="logo"></a>
 		</div>
-		<div id="search-box-1" class="clearfix">
-			<form class="search-form" role="search" action="https://catalog.swanlibraries.net/client/en_US/tps/search/results" method="POST" accept-charset="UTF-8" target="_blank">
-				<input title="enter search terms" class="form-text" placeholder="Search..." type="search" name="qu" value="" size="15" maxlength="128" />
-				<input type="hidden" name="te" alt="Search" value="" maxlength="256" size="32" />
-				<div class="form-select">
-					<div class="select-box">
-						<span>Catalog</span><span>Website</span>
+		<div id="search-nav" class="clearfix">
+			<div id="search-box-1" class="clearfix">
+				<form class="search-form" role="search" action="https://catalog.swanlibraries.net/client/en_US/tps/search/results" method="POST" accept-charset="UTF-8" target="_blank">
+					<input title="enter search terms" class="form-text" placeholder="Search..." type="search" name="qu" value="" size="15" maxlength="128" />
+					<input type="hidden" name="te" alt="Search" value="" maxlength="256" size="32" />
+					<div class="switch-field clearfix">
+						<input type="radio" id="switch_left" name="switch_2" value="yes" checked />
+						<label for="switch_left"></label>
+						<input type="radio" id="switch_right" name="switch_2" value="no" />
+						<label for="switch_right"></label>
 					</div>
-				</div>
-				<input type="submit" id="edit-submit" name="op" value="Go" class="form-submit" />
-			</form>
-		</div>
-		<nav id="head-nav">
+					<input type="submit" id="edit-submit" name="op" value="Go" class="form-submit" />
+				</form>
+			</div>
+			<nav id="head-nav">
 			<ul>
-				<li>My Account &amp; Catalog</li>
-				<li>Hours &amp; Contact</li>
+				<li><a href="https://catalog.swanlibraries.net/client/en_US/tps/search/patronlogin/https:$002f$002fcatalog.swanlibraries.net$002fclient$002fen_US$002ftps$002fsearch$002faccount$003f/" target="_blank" title="Login and search the catalog">My Account &amp; Catalog</a></li>
+				<li><a href="http://www.tplibrary.org/contact-hours" title="See when we are open and how to get ahold of us">Hours &amp; Contact</a></li>
 			</ul>
-		</nav>
+			</nav>
+		</div>
 	</header>
 
 <!-- Nav -->
 	<nav id="main-navigation">
-		<ul>
-			<li class="current"><a href="index.html">Home</a></li>
-			<li><a href="kidsteens.html">Kids &amp; Teens</a></li>
-			<li><a href="adultsseniors.html">Adults &amp; Seniors</a></li>
-			<li><a href="events.html">Events</a></li>
-			<li><a href="services.html">Services</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
+	<ul>
+		<li><a href="kidsteens.html">Kids &amp; Teens</a></li>
+		<li><a href="adultsseniors.html">Adults &amp; Seniors</a></li>
+		<li><a href="events.html">Events</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="about.html">About</a></li>
+	</ul>
 	</nav>
 <!-- Main -->
 	<main>
 <!-- Banner -->
-		<section id="banner">
-
-		</section>
-
+	<section id="banner">
+	</section>
 <!-- Events -->
-		<section id="upcoming">
-			<h1>Upcoming Events</h1>
-			<div class="box post"><a href="#" class="image left"></a></div>
-		</section>
+	<section id="upcoming">
+		<h1>
+			Upcoming Events
+		</h1>
+		<div class="box post">
+			<a href="#" class="image left"></a>
+		</div>
+	</section>
 
 <!-- Highlights -->
-		<section class="wrapper style1">
-			<div class="container">
-				<h2>
-					Borrow
-				</h2>
-				<div class="row 200%">
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<a href="booksebooks.html"><i class="icon major fa-book"></i></a> <a href="booksebooks.html"><strong>Books &amp; eBooks</strong></a>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<a href="audiobooks.html"><i class="icon major fa-headphones"></i></a> <a href="audiobooks.html"><strong>Audiobooks</strong></a>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<a href="#"><i class="icon major fa-film"></i></a> <a href="#"><strong>Movies</strong></a>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<a href="#"><i class="icon major fa-music"></i></a> <a href="#"><strong>Music</strong></a>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<a href="#"><i class="icon major fa-leanpub"></i></a> <a href="#"><strong>Magazines</strong></a>
-						</div>
-					</section>
-				</div>
+	<section class="wrapper style1">
+		<div class="container">
+			<h2>
+				Borrow
+			</h2>
+			<div class="row 200%">
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<a href="booksebooks.html"><i class="icon major fa-book"></i></a> <a href="booksebooks.html"><strong>Books &amp; eBooks</strong></a>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<a href="audiobooks.html"><i class="icon major fa-headphones"></i></a> <a href="audiobooks.html"><strong>Audiobooks</strong></a>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<a href="#"><i class="icon major fa-film"></i></a> <a href="#"><strong>Movies</strong></a>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<a href="#"><i class="icon major fa-music"></i></a> <a href="#"><strong>Music</strong></a>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<a href="#"><i class="icon major fa-leanpub"></i></a> <a href="#"><strong>Magazines</strong></a>
+					</div>
+				</section>
 			</div>
-		</section>
+		</div>
+	</section>
 
 <!-- Highlights -->
-		<section class="wrapper style1">
-			<div class="container">
-				<h2>
-					Learn Online
-				</h2>
-				<div class="row 200%">
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-institution"></i> <strong>Research</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-pencil"></i> <strong>Homework Help</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-leaf"></i> <strong>Genealogy</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-star-half-o"></i> <strong>Advice &amp; Reviews</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-graduation-cap"></i> <strong>Continuing Education</strong>
-						</div>
-					</section>
-				</div>
+	<section class="wrapper style1">
+		<div class="container">
+			<h2>
+				Learn Online
+			</h2>
+			<div class="row 200%">
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-institution"></i> <strong>Research</strong>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-pencil"></i> <strong>Homework Help</strong>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-leaf"></i> <strong>Genealogy</strong>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-star-half-o"></i> <strong>Advice &amp; Reviews</strong>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-graduation-cap"></i> <strong>Continuing Education</strong>
+					</div>
+				</section>
 			</div>
-		</section>
-
+		</div>
+	</section>
 
 <!-- Posts -->
-		<section class="wrapper style1">
-			<div class="container">
-				<h2>
-					Services
-				</h2>
-				<div class="row 200%">
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-barcode"></i> <strong>Library Cards &amp; Accounts</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-truck"></i> <strong>Bookmobile</strong>
-						</div>
-					</section>
-					
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-laptop"></i> <strong>Computer Use &amp; Access</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-print"></i> <strong>Remote Printing</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-play"></i> <strong>Media Labs</strong>
-						</div>
-					</section>
+	<section class="wrapper style1">
+		<div class="container">
+			<h2>
+				Services
+			</h2>
+			<div class="row 200%">
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-barcode"></i> <strong>Library Cards &amp; Accounts</strong>
 					</div>
-					<div class="row 200%">
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-building"></i> <strong>Rooms</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-newspaper-o"></i> <strong>Library Newsletter</strong>
-						</div>
-					</section>
-					<section class="2u 12u(narrower)">
-						<div class="box highlight">
-							<i class="icon major fa-plus"></i> <strong>More</strong>
-						</div>
-					</section>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-truck"></i> <strong>Bookmobile</strong>
 					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-laptop"></i> <strong>Computer Use &amp; Access</strong>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-print"></i> <strong>Remote Printing</strong>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-play"></i> <strong>Media Labs</strong>
+					</div>
+				</section>
 			</div>
-		</section>
+			<div class="row 200%">
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-building"></i> <strong>Rooms</strong>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-newspaper-o"></i> <strong>Library Newsletter</strong>
+					</div>
+				</section>
+				<section class="2u 12u(narrower)">
+					<div class="box highlight">
+						<i class="icon major fa-plus"></i> <strong>More</strong>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
 
 <!-- CTA -->
-		<section id="cta" class="wrapper style3">
-			<div class="container">
-				<header>
-					<h2>
-						Check out our newsletter
-					</h2>
-					<a href="#" class="button">Subscribe</a>
-				</header>
-			</div>
-		</section>
-
+	<section id="cta" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>
+					Check out our newsletter
+				</h2>
+				<a href="#" class="button">Subscribe</a>
+			</header>
+		</div>
+	</section>
 	</main>
 <!-- Footer -->
 	<div id="footer">
@@ -240,7 +239,7 @@
 					<ul class="links">
 						<li><a href="#">Museum Passes</a></li>
 						<li><a href="#">Village of Tinley Park</a></li>
-						<li><a href="#">Village of Orland Hills</a></li>				
+						<li><a href="#">Village of Orland Hills</a></li>
 					</ul>
 				</section>
 				<section class="6u 12u$(narrower)">
@@ -293,6 +292,17 @@
 	</div>
 </div>
 <!-- Scripts -->
+<div style="position:fixed; bottom: 0; right:0;">
+  <script type="text/javascript">
+    function showPopup(url) {
+        newwindow = window.open(url,'mosio_chat','height=430,width=490,top=200,left=300,resizable');
+        if (window.focus) { newwindow.focus(); }
+    }
+  </script>
+    <a href="https://chat.mosio.com/par/chat/new_chat/asktppl" onclick="showPopup(this.href); return false;"><img src="images/askalibrarian.png">
+        <span class="icon"></span>
+    </a>
+</div>
 <!-- Disabled Scripts
 
 <script src="assets/js/jquery.min.js">
