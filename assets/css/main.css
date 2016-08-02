@@ -2014,7 +2014,39 @@ nav#main-navigation  > ul > li > ul { display: none; }
 	vertical-align: middle;
 	margin-left: 1em;
 }
+/* Book Carousel */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
 
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  max-height: 400px;
+  float: left;
+  width: 10%;
+  border: 0;
+  margin: 15px
+}
 /* Footer */
 #footer { padding: 4em 0 8em 0; }
 
@@ -2468,6 +2500,7 @@ nav#main-navigation  > ul > li > ul { display: none; }
 
 	/* CTA */
 	#cta { padding: 20px; }
+	
 
 	/* Footer */
 	#footer
