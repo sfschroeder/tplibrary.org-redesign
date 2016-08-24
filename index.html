@@ -4,13 +4,42 @@
 	<title>Tinley Park Public Library</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
 	</script>
 	<script src="assets/js/responsiveslides.min.js">
+	</script>
+	<script src="assets/js/jquery.flexslider-min.js">
+	</script>
+	<script type="text/javascript" charset="utf-8">
+
+	  $(function() {
+	    $("#slider").responsiveSlides({
+		pager: true,
+		nav: true,
+		namespace: "banner-slider",
+	    });
+	  });
+
+	</script>
+	<script type="text/javascript" charset="utf-8">
+
+	  $(window).load(function() {
+	    $('.flexslider').flexslider({
+	    	slideshow: false,
+	    	animation: "slide",
+	    	animationLoop: true,
+	    	itemWidth: 150,
+	    	itemMargin: 0
+	    });
+	  });
+
 	</script>
 
 <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/flexslider.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
@@ -158,45 +187,60 @@
 	</nav>
 <!-- Main -->
 	<main>
-<!-- Banner -->
+<!-- Banner: Images use an aspect ratio of 19:7, and max-height 350px -->
 	<section id="banner">
-		<div class="slideshow clearfix">
-			<ul class="slideshow-content">
-				<li class="clearfix">
-				<div class="slideshow-image">
-					<img alt="a description" src="images/banner.jpg">
-				</div>
-				<div class="slideshow-teaser">
-					<h1>
-						This is a slider
-					</h1>
-					<p>
-						This will display 3-5 library news items in sequential order. There will be buttons advance the slides. This teaser will be condensed on mobile devices.
-					</p>
-				</div>
-				</li>
-			</ul>
-		</div>
+		<ul class="rslides" id="slider">
+			<li>
+			<div class="slider-image">
+				<img alt="a description" src="images/1.jpg">
+			</div>
+			<div class="slider-teaser">
+				<h1 class="teaser-heading">
+					This is a slider
+				</h1>
+				<p class="teaser-body">
+					This will display 3-5 library news items in sequential order. There will be buttons advance the slides. This teaser will be condensed on mobile devices.
+				</p>
+			</div>
+			</li>
+			<li>
+			<div class="slider-image">
+				<img alt="a description" src="images/2.jpg">
+			</div>
+			<div class="slider-teaser">
+				<h1 class="teaser-heading">
+					This is the Second image
+				</h1>
+				<p class="teaser-body">
+					This is a teaser that will display information relevant to the second slide
+				</p>
+			</div>
+			</li>
+			<li>
+			<div class="slider-image">
+				<img alt="a description" src="images/3.jpg">
+			</div>
+			<div class="slider-teaser">
+				<h1 class="teaser-heading">
+					This is the last image
+				</h1>
+				<p class="teaser-body">
+					This image is all about bulldozers. And this is a whole heck of a lot of text.<br />
+					<br />
+					And this is a whole heck of a lot of text. And this is a whole heck of a lot of text. And this is a whole heck of a lot of text. And this is a whole heck of a lot of text. And this is a whole heck of a lot of text. And this is a whole heck of a lot of text. And this is a whole heck of a lot of text. And this is a whole heck of a lot of text.
+				</p>
+			</div>
+			</li>
+		</ul>
 	</section>
 
 <!-- Events -->
 	<section id="upcoming">
 		<div>
-			<script type="text/javascript">
-				document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');
-			</script>
-			<script type="text/javascript">
-				(function()
-				{var params = {rssmikle_url: "http://host6.evanced.info/tinleypark/evanced/eventsxml.asp?ag=&et=&lib=0&nd=2&feedtitle=Tinley+Park+Public+Library%3CBR%3E+Calendar+of+Events&dm=rss2&LangType=0&includeregstatus=1",
-				rssmikle_frame_width: "1000",rssmikle_frame_height: "400",frame_height_by_article: "1",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "on",
-				rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "off",autoscroll: "on",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "Off",rssmikle_title: "on",rssmikle_title_sentence: "Upcoming Events",
-				rssmikle_title_link: "",rssmikle_title_bgcolor: "#B15655",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",
-				rssmikle_item_title_color: "#B15655",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "500",rssmikle_item_description_color: "#666666",
-				rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",
-				keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();
-			</script>
+			placeholder
 		</div>
 	</section>
+
 <!-- Highlights -->
 	<section class="wrapper style1">
 		<div class="container">
@@ -322,27 +366,29 @@
 		</div>
 	</section>
 	<section class="wrapper style1">
-		<div class="container" style="height: 300px;">
+		<div class="container">
 			<h2>
 				Now Trending
 			</h2>
-			<ul class="rslides">
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781501908422" title="The Waters of Eternal Youth" alt="The Waters of Eternal Youth" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9781501908422&amp;oclc=9781501908422" /></a>Author name, book description goes here</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781501129742" title="End of Watch" alt="End of Watch" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9781501129742&amp;oclc=9781501129742" /></a>It would be nice</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9780451483966" title="Vinegar Girl " alt="Vinegar Girl " target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9780451483966&amp;oclc=9780451483966" /></a>if we could just</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781501223976" title="Bay of Sighs" alt="Bay of Sighs" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9781501223976&amp;oclc=9781501223976" /></a>embed Enterprise's</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781480533592" title="White Bone" alt="White Bone" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=9781480533592/MC.GIF&amp;client=swansconsor&amp;upc=9781480533554&amp;oclc=951921950" /></a> bestseller/new lists & BookRiver</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=786936848953" title="The Good Dinosaur" alt="The Good Dinosaur" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=786936848953/MC.GIF&amp;client=swansconsor&amp;upc=786936848953&amp;oclc=786936848953" /></a>in this space</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=858135004840" title="Southern Native" alt="Southern Native" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=858135004840&amp;oclc=858135004840" /></a>Can we obtain</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9780307266521" title="The Romanovs: 1613-1918" alt="The Romanovs: 1613-1918" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9780307266521&amp;oclc=9780307266521" /></a>that code</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781410490728" title="More than Rivals" alt="More than Rivals" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9781410490728&amp;oclc=9781410490728" /></a>and include it</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=888072003422" title="Beautiful Broken" alt="Beautiful Broken" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=888072003422&amp;oclc=888072003422" /></a>in our Drupal</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=696859309984" title="God's Not Dead 2" alt="God's Not Dead 2" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=696859309984&amp;oclc=696859309984" /></a>front page template</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781410489975" title="The Emperor's Revenge" alt="The Emperor's Revenge" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9781410489975&amp;oclc=9781410489975" /></a>and make it</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781455539741" title="Hamilton" alt="Hamilton" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9781455539741&amp;oclc=9781455539741" /></a>responsive?</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=883929524426" title="The 100" alt="The 100" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=883929524426&amp;oclc=883929524426" /></a>This is simply</li>
-				<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9780670785971" title="White Trash" alt="White Trash" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.GIF&amp;client=swansconsor&amp;upc=9780670785971&amp;oclc=9780670785971" /></a>food for thought</li>
-			</ul>
+			<div class="flexslider">
+				<ul class="slides" id="book-slider">
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781501908422" title="The Waters of Eternal Youth" alt="The Waters of Eternal Youth" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9781501908422&amp;oclc=9781501908422" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781501129742" title="End of Watch" alt="End of Watch" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9781501129742&amp;oclc=9781501129742" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9780451483966" title="Vinegar Girl " alt="Vinegar Girl " target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9780451483966&amp;oclc=9780451483966" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781501223976" title="Bay of Sighs" alt="Bay of Sighs" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9781501223976&amp;oclc=9781501223976" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781480533592" title="White Bone" alt="White Bone" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=9781480533592/MC.JPG&amp;client=swansconsor&amp;upc=9781480533554&amp;oclc=951921950" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=786936848953" title="The Good Dinosaur" alt="The Good Dinosaur" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=786936848953/MC.JPG&amp;client=swansconsor&amp;upc=786936848953&amp;oclc=786936848953" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=858135004840" title="Southern Native" alt="Southern Native" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=858135004840&amp;oclc=858135004840" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9780307266521" title="The Romanovs: 1613-1918" alt="The Romanovs: 1613-1918" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9780307266521&amp;oclc=9780307266521" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781410490728" title="More than Rivals" alt="More than Rivals" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9781410490728&amp;oclc=9781410490728" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=888072003422" title="Beautiful Broken" alt="Beautiful Broken" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=888072003422&amp;oclc=888072003422" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=696859309984" title="God's Not Dead 2" alt="God's Not Dead 2" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=696859309984&amp;oclc=696859309984" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781410489975" title="The Emperor's Revenge" alt="The Emperor's Revenge" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9781410489975&amp;oclc=9781410489975" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9781455539741" title="Hamilton" alt="Hamilton" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9781455539741&amp;oclc=9781455539741" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=883929524426" title="The 100" alt="The 100" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=883929524426&amp;oclc=883929524426" /></a></li>
+					<li><a href="https://catalog.swanlibraries.net/client/tps/search/results?qu=9780670785971" title="White Trash" alt="White Trash" target="_blank"><img src="http://syndetics.com/index.aspx?isbn=/MC.JPG&amp;client=swansconsor&amp;upc=9780670785971&amp;oclc=9780670785971" /></a></li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
@@ -449,42 +495,17 @@
 </div>
 
 <!-- Scripts -->
-<script>
-
-  $(function() {
-    $(".rslides").responsiveSlides();
-  });
-</script>
 <div style="position:fixed; bottom: 0; right:0;">
 	<script type="text/javascript">
+
 	    function showPopup(url) {
 		   newwindow = window.open(url,'mosio_chat','height=430,width=490,top=200,left=300,resizable');
 		   if (window.focus) { newwindow.focus(); }
 	    }
+
 	</script>
 	<a href="https://chat.mosio.com/par/chat/new_chat/asktppl" onclick="showPopup(this.href); return false;"><img src="images/askalibrarian.png"> <span class="icon"></span> </a>
 </div>
-<script>
-	$(document).ready(function () {
-	    $('#myCarousel').carousel({
-		   interval: 10000
-	    })
-	    $('.fdi-Carousel .item').each(function () {
-		   var next = $(this).next();
-		   if (!next.length) {
-			  next = $(this).siblings(':first');
-		   }
-		   next.children(':first-child').clone().appendTo($(this));
-
-		   if (next.next().length > 0) {
-			  next.next().children(':first-child').clone().appendTo($(this));
-		   }
-		   else {
-			  $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-		   }
-	    });
-	});
-</script>
 
 <!-- Disabled Scripts
 
